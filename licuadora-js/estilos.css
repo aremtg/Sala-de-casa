@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+    background-color: rgb(102, 101, 101);
+    max-height: 100vh;
+}
+.caja-lampara{
+  margin-top: 415px;
+  width: max-content;
 }
 .lampara{
-position: absolute;
    width: 200px;
    top: 150px;
 }
@@ -15,14 +19,15 @@ position: absolute;
     width: 370px;
     position: absolute;
     transform: rotate(-46deg);
-    top: 210px;
+    top: 475px;
     left: 50px;
 }
+
 .mesa{
     position: absolute;
    /* background-color: red; */
     width: 50%;
-    height: 125px;
+    height: 175px;
     position: fixed;
     bottom: 0;
 }
@@ -37,15 +42,25 @@ position: absolute;
     height: 100%;
     background-color: rgb(126, 65, 24);
 }
-/* boto libreria */
-.caja-boton{
+/* boton libreria */
+.caja-bombillo{
     position: absolute;
-    top: 200px;
-    right: 200px;
+    position: fixed;
+    top: 0;
+    right: 100px;
+    width:200px;
+    height:100vh;
+  
+ }
+ .caja-bombillo img{
+  margin-top: -10px;
+  width: 80px;
+ }
+.caja-boton{
+  margin-top: 400px;
     transform: rotate(-90deg);
     width: 50px;
     height: 25px;
-    background-color: red;
 }
 #switch {
     visibility: hidden;
