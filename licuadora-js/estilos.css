@@ -2,28 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 body{
-    background-color: rgb(102, 101, 101);
-    max-height: 100vh;
+  max-height: 100vh;
+  background-color: #353131e7;
 }
 .contenedor{
   display: flex;
 }
 .caja-lampara{
   width: 200px;
-  background-color: burlywood;
   margin-top: 434px;  
 }
 .lampara{
    width: 190px;
 }
 .luz{
-    width: 370px;
+    width: 330px;
     position: absolute;
     transform: rotate(-46deg);
-    top: 485px;
-    left:28px;
+    top: 490px;
+    left:54px;
+}
+.boton-lampara{
+  position: absolute;
+  bottom: 195px;
+  left: 110px;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(44, 41, 38);
+  border-radius: 50px 50px 0 0;
+  cursor: pointer;
+  transform: rotate(15deg);
+}
+.luz.display-none{
+  display: none;
 }
 .mesa{
    /* background-color: red; */
@@ -48,7 +62,7 @@ body{
     position: absolute;
     position: fixed;
     top: 0;
-    right: 100px;
+    right: 200px;
     width:200px;
     height:100vh; 
  }
