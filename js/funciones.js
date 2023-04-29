@@ -1,4 +1,4 @@
-// const button = document.querySelector("button");
+// var button = document.querySelector("button");
 // button.addEventListener("click", action);
 // function action() {
 //   alert("Hello!");
