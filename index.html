@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <section class="sala">
+        
+        <div class="caja-lampara">
+            <img class="lampara" src="imagenes/lampara.svg" alt="">
+            <img class="luz display-none" src="imagenes/luz.svg" alt="">
+            <span class="boton-lampara" onclick="estado_lampara()"></span>
+        </div>
+        <div class="columna"></div>
+        <div class="mesa">
+            <div class="parte-superior">
+
+            </div>
+            <div class="patas">
+
+            </div>
+        </div>  
+   <div class="caja-bombillo">
+        <img src="imagenes/bombillo.svg" alt="">
+        
+        <div class="caja-boton">
+            <input name="switch" id="switch" type="checkbox" onclick="estado_bombillo()">
+            <label class="switch" for="switch"></label>
+        </div> 
+    </div>
+    </section>
+   
+
+<script src="js/funciones.js"></script>
+</body>
+</html>
