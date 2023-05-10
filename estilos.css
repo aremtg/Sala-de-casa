@@ -85,6 +85,7 @@ body{
   height: 100%;
   position: absolute;
   left: 740px;
+  box-shadow: -27px 1px 54px -7px rgba(0,0,0,0.75);
 }
 #switch {
     visibility: hidden;
