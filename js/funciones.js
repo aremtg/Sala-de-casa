@@ -4,9 +4,6 @@
 //   alert("Hello!");
 // };
 
-
-var botonLuz = document.getElementById("switch");
-
 function estado_bombillo() {
     const body = document.body;
     body.classList.toggle('bombillo-prendido');
