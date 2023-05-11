@@ -11,11 +11,23 @@
     <section class="contenedor">
     <div class="izquierda">
          <div class="hoja">
+            <span class="fecha"></span>
                 <h1>PEPELITO DE SALIDA</h1>
-                <p>Permiso de salida para el aprendiz <strong>LALO GUZMAN</strong>
-                    , titulada <em>Analisi y Desarrollo de Software</em>.</p>
+                <p>Permiso de salida para el aprendiz
+                    <strong>
+                        <select class="nombre-select" name="nombres">
+                            <option value="opcion-defecto">Nombre</option>
+                            <option value="tatiana">Tatiana Guzman</option>
+                            <option value="lolo">Lolo Guzman</option>
+                            <option value="you">You</option>
+                            <option value="jonathan">Jonathan Caro</option>
+                          </select>
+                    </strong> <br>
+                    de la titulada <em>Analisi y Desarrollo de Software</em> Lorem ipsum dolor sit amet consectetur <br>
+                    adipisicing elit. Repudiandae alias reprehenderit perspiciatis, nobis eum libero <br>
+                    mollitia aspernatur deserunt assumenda cum ratione asperiores suscipit vero<br>fugiat quam veritatis iste..</p>
               </div>
-              <button onclick="generarImagen()">Generar imagen</button>
+              <button class="btn-generar-imagen" onclick="generarImagen()">Generar Papelito</button>
     </div>
     <div class="derecha">
         <div class="resultado">

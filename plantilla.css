@@ -23,24 +23,39 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 90%;
     height: 100%;
-    padding: 10px auto;
 }
 .hoja{
     width: 90%;
     height: 70%;
+    padding: 10px;
     border-radius: 20px;
     background-color: white;
 }
 .hoja h1{
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 40px;
 }
 .hoja p{
     text-align: center;
-    font-size: 33px;
+    font-size: 23px;
+}
+.nombre-select{
+    width: 200px;
+    height: 30px;
+    border:none;
+    border-bottom: rgb(51, 50, 50) 2px solid;
+    font-size: 18px;
+    
+}
+.btn-generar-imagen{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
 }
 .resultado{
     display: flex;
