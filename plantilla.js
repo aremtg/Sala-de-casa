@@ -18,19 +18,18 @@ function generarImagen() {
   if (img) {
     resultado.removeChild(img);
   }
-    html2canvas(document.querySelector(".hoja")).then(function(canvas) {
+    html2canvas(document.querySelector(".hoja")).then(function(canvas){
       // el SRC DE LA IMG crear
       var img = new Image();
       img.src = canvas.toDataURL();
 
-      // se generooo
+      // se generooo y se agrego
       resultado.appendChild(img);
       
     });
-  }
-  function enviarAPorteria(){
+}
+function enviarAPorteria(){
     var resultado = document.querySelector(".resultado");
     resultado.innerHTML = ` `;
-    resultado.innerHTML = `<img src="imagenes/portero2.jpg" alt="">`;
-  }
+}
   

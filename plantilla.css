@@ -8,8 +8,7 @@
 body{
     max-height: 100vh;
     display: flex;
-    background: rgb(132, 209, 44);
-    background: linear-gradient(90deg, rgb(110, 57, 209) 0%, rgb(170, 41, 230) 52%, rgb(238, 105, 171) 100%);
+    background: rgb(199, 199, 198);
 }
 .contenedor{
     background-color: rgb(232, 233, 232);
@@ -53,31 +52,12 @@ body{
     margin-bottom: 40px;
 }
 .hoja table{
-    width: 100%;
     text-align: center;
-    font-size: 23px;
+    font-size: 19px;
 }
-table th{
-    border: 1px black solid;
-}
-table select{
-    background-color: rgb(224, 190, 255);
-    outline: none;
-    border: none;
-    text-align: center;
-    font-size: 24px;
-    width: 100%;
-    height: 100%;
-    padding: 4px;
-    border-radius: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-table .motivo{
-    width: 100%;
-    height: 100px;
-    font-size: 27px;
-    padding: 5px;
+.hoja .text-motivo{
+    font-size: 19px;
+    font-weight:700;
 }
 .btn-generar-imagen{
     padding: 10px;
@@ -85,7 +65,7 @@ table .motivo{
     border: none;
     font-size: 30px;
     cursor: pointer;
-    background: linear-gradient(90deg, rgb(34, 241, 44) 0%, rgb(218, 150, 250) 52%, rgb(105, 238, 165) 100%);
+    background:  rgb(105, 238, 165);
 }   
 /* la imagen generada */
 /* caja */
