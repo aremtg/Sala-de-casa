@@ -1,22 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Poppins:wght@300;400;500;600;800&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body{
-    height: 100vh;
+    max-height: 100vh;
     display: flex;
     background: rgb(132, 209, 44);
-    background: linear-gradient(90deg, rgb(57, 209, 77) 0%, rgb(201, 230, 41) 52%, rgb(105, 238, 194) 100%);
+    background: linear-gradient(90deg, rgb(110, 57, 209) 0%, rgb(170, 41, 230) 52%, rgb(238, 105, 171) 100%);
 }
 .contenedor{
-    background-color: rgb(223, 218, 218);
-    width: 95%;
-    height: 90%;
+    background-color: rgb(232, 233, 232);
+    width: 90%;
+    height: 800px;
     border-radius: 30px;
-    margin: auto;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 
 }
 .izquierda, .derecha{
@@ -24,49 +27,80 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 90%;
-    height: 100%;
 }
 .hoja{
-    width: 90%;
+    width: 95%;
     height: 70%;
     padding: 10px;
     border-radius: 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
-.hoja h1{
+.hoja .logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.separa-logos{
+    width: 5px;
+    height: 70px;
+    background-color: black;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.hoja .titulo{
     font-size: 30px;
     text-align: center;
     margin-bottom: 40px;
 }
-.hoja p{
+.hoja table{
+    width: 100%;
     text-align: center;
     font-size: 23px;
 }
-.nombre-select{
-    width: 200px;
-    height: 30px;
-    border:none;
-    border-bottom: rgb(51, 50, 50) 2px solid;
-    font-size: 18px;
-    
+table th{
+    border: 1px black solid;
+}
+table select{
+    background-color: rgb(224, 190, 255);
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+table .motivo{
+    width: 100%;
+    height: 100px;
+    font-size: 27px;
+    padding: 5px;
 }
 .btn-generar-imagen{
     padding: 10px;
     border-radius: 5px;
     border: none;
-    font-size: 20px;
-}
+    font-size: 30px;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(34, 241, 44) 0%, rgb(218, 150, 250) 52%, rgb(105, 238, 165) 100%);
+}   
+/* la imagen generada */
+/* caja */
 .resultado{
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    justify-content: center;
+    width: 95%;
+    height: 70%;
+    box-shadow: 1px 5px 16px 2px rgb(85, 77, 77);
+    border-radius: 14px;
+    overflow: hidden;
 }
 .resultado img{
-    aspect-ratio: 8/ 7;
-    width:76%;
-    border-radius: 14px;
-  
+    aspect-ratio: 9/7;
+    width: 100%;
+    height: 100%;
 }

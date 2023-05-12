@@ -8,16 +8,29 @@ let mes = meses[date.getMonth()];
 let año = date.getFullYear();
 
 let fecha = document.querySelector(".fecha");
-fecha.innerHTML =  "<h1>" + diaMes + " de " + mes + " del " + año + "</h1>";
+fecha.innerHTML =  "<h2>" + diaMes + "/" + mes + "/" + año + "</h2>";
 
 function generarImagen() {
+
+  var resultado = document.querySelector(".resultado");
+  var img = resultado.querySelector("img");
+
+  if (img) {
+    resultado.removeChild(img);
+  }
     html2canvas(document.querySelector(".hoja")).then(function(canvas) {
-      // el img crear
+      // el SRC DE LA IMG crear
       var img = new Image();
       img.src = canvas.toDataURL();
-      var resultado = document.querySelector(".resultado");
 
       // se generooo
       resultado.appendChild(img);
+      
     });
   }
+  function enviarAPorteria(){
+    var resultado = document.querySelector(".resultado");
+    resultado.innerHTML = ` `;
+    resultado.innerHTML = `<img src="imagenes/portero2.jpg" alt="">`;
+  }
+  
