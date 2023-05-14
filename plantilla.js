@@ -18,10 +18,10 @@ function generarImagen() {
   if (img) {
     resultado.removeChild(img);
   }
-    html2canvas(document.querySelector(".hoja")).then(function(canvas){
+    html2canvas(document.querySelector(".hoja")).then(function(captura){
       // el SRC DE LA IMG crear
       var img = new Image();
-      img.src = canvas.toDataURL();
+      img.src = captura.toDataURL();
 
       // se generooo y se agrego
       resultado.appendChild(img);
