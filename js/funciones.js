@@ -26,7 +26,7 @@ function controlarLicuadora() {
 
     setTimeout(() => {
       caja_sonido.innerHTML = `<audio src="sound/sonido-br.mp3" autoplay></audio>`;
-    }, 300);+
+    }, 300);
     
     licuadora.classList.add("active");
    
